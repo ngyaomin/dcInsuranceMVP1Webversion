@@ -14,3 +14,14 @@ app.listen(port, () => {
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/requestInsurance");
 
+var requestInsuranceSchema = new.mongoose.Schema({
+  firstName: String,
+  lastName: String,
+  term1: String,
+  valuePayout1: String,
+  term2: String,
+  valuePayout2: String,
+  term3: String,
+  valuePayout3: String,
+  premium: String
+});
