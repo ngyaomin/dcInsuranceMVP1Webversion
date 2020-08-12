@@ -25,3 +25,5 @@ var requestInsuranceSchema = new.mongoose.Schema({
   valuePayout3: String,
   premium: String
 });
+
+var InsuranceRequest = mongoose.model("InsuranceRequest", requestInsuranceSchema);
