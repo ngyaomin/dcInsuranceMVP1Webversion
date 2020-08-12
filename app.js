@@ -17,7 +17,7 @@ app.listen(port, () => {
 mongoose.Promise = global.Promise;
 mongoose.connect("mongodb://localhost:27017/requestInsurance");
 
-var requestInsuranceSchema = new.mongoose.Schema({
+var requestInsuranceSchema = new mongoose.Schema({
   firstName: String,
   lastName: String,
   term1: String,
