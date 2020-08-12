@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ngyaomin/dcInsuranceMVP1Webversion/issues"
   },
-  "homepage": "https://github.com/ngyaomin/dcInsuranceMVP1Webversion#readme"
+  "homepage": "https://github.com/ngyaomin/dcInsuranceMVP1Webversion#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
