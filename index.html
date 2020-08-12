@@ -14,16 +14,17 @@
 
 <body>
   <script src="scripts/main.js"></script>
-  <form name="RequestInsuranceForm" action="/dummy_page.html" method="post">
-    <input type="text" name="firstName" required value="Enter Your First Name">
-    <input type="text" name="LastName" required value="Enter Your Last Name">
-    <input type="text" name="Term1" required value="Include term of payout1">
-    <input type="text" name="valuePayout1" required value="Include value of payout1">
-    <input type="text" name="Term2" required value="Include term of payout2">
-    <input type="text" name="valuePayout2" required value="Include value of payout2">
-    <input type="text" name="Term3" required value="Include term of payout3">
-    <input type="text" name="valuePayout3" required value="Include value of payout3">
-    <input type="submit" value="Submit">
+  <form name="RequestInsuranceForm" action="/addInsuranceRequest" method="post">
+    <label>First Name</label><input type="text" name="firstName" required placeholder="Enter Your First Name"><br>
+    <label>2nd Name</label><input type="text" name="LastName" required placeholder="Enter Your Last Name"><br>
+    <label>Term 1</label><input type="text" name="Term1" required placeholder="Include term of payout1"><br>
+    <label>Payout 1</label><input type="text" name="valuePayout1" required placeholder="Include value of payout1"><br>
+    <label>Term 2</label><input type="text" name="Term2" required placeholder="Include term of payout2"><br>
+    <label>Payout 2</label><input type="text" name="valuePayout2" required placeholder="Include value of payout2"><br>
+    <label>Term 3</label><input type="text" name="Term3" required placeholder="Include term of payout3"><br>
+    <label>Payout 3</label><input type="text" name="valuePayout3" required placeholder="Include value of payout3"><br>
+    <label>Premium</label><input type="text" name="premium" required placeholder="Amt of Premium to pay"><br>
+    <<input type="submit" value="Submit">
   </form>
 </body>
 </html>
