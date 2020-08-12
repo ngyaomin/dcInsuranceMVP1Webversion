@@ -32,5 +32,12 @@ var requestInsuranceSchema = new.mongoose.Schema({
 var InsuranceRequest = mongoose.model("InsuranceRequest", requestInsuranceSchema);
 
 app.post("/addInsuranceRequest", (req, res) => {
-  
+  var requestInsuranceData = new InsuranceRequest(req.body);
+  requestInsuranceData.save()
+  .then(item => {
+    res.send("item saved to database");
+  })
+  .catch(err => {
+    res.status(400).send("fill in your form properly la");
+  });
 });
