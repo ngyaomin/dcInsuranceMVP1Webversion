@@ -27,3 +27,7 @@ var requestInsuranceSchema = new.mongoose.Schema({
 });
 
 var InsuranceRequest = mongoose.model("InsuranceRequest", requestInsuranceSchema);
+
+app.post("/addInsuranceRequest", (req, res) => {
+  
+});
