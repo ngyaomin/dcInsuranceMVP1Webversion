@@ -19,5 +19,6 @@ app.get('', (req, res) => {
     term3: 'term1',
     valuePayout3: 'valuePayout1',
     premium: 'premium'
-  }
+  };
+  res.json(data);
 })
