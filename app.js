@@ -41,3 +41,7 @@ app.post("/addInsuranceRequest", (req, res) => {
     res.status(400).send("fill in your form properly la");
   });
 });
+
+getInsuranceRequests = () => {
+  axios.get()
+}
