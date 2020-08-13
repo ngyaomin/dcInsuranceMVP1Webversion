@@ -21,4 +21,19 @@ app.get('/api', (req, res) => {
     premium: 'premium'
   };
   res.json(data);
-})
+});
+
+app.get('/api/RequestedInsurance1', (req, res) => {
+  const data {
+    firstName: 'I need protection',
+    lastName: 'Protect Me',
+    term1: 'termA',
+    valuePayout1: 'valuePayoutA',
+    term2: 'termB',
+    valuePayout2: 'valuePayoutB',
+    term3: 'termC',
+    valuePayout3: 'valuePayoutC',
+    premium: 'Give me Free'
+  };
+  res.json(data);
+});
