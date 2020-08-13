@@ -7,3 +7,17 @@ const app = express();
 const PORT = process.env.PORT || 8080;
 
 app.use(morgan('tiny'));
+
+app.get('', (req, res) => {
+  const data {
+    firstName: 'testing',
+    lastName: 'test',
+    term1: 'term1',
+    valuePayout1: 'valuePayout1',
+    term2: 'term1',
+    valuePayout2: 'valuePayout1',
+    term3: 'term1',
+    valuePayout3: 'valuePayout1',
+    premium: 'premium'
+  }
+})
