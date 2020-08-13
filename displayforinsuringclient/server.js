@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 app.use(morgan('tiny'));
 
 app.get('/api', (req, res) => {
-  const data {
+  const data = {
     firstName: 'testing',
     lastName: 'test',
     term1: 'term1',
@@ -24,7 +24,7 @@ app.get('/api', (req, res) => {
 });
 
 app.get('/api/RequestedInsurance1', (req, res) => {
-  const data {
+  const data = {
     firstName: 'I need protection',
     lastName: 'Protect Me',
     term1: 'termA',
