@@ -37,3 +37,5 @@ app.get('/api/RequestedInsurance1', (req, res) => {
   };
   res.json(data);
 });
+
+app.listen(PORT, console.log(`Server is starting at ${port}`));
