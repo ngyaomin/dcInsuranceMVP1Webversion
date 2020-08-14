@@ -42,6 +42,3 @@ app.post("/addInsuranceRequest", (req, res) => {
   });
 });
 
-getInsuranceRequests = () => {
-  axios.get()
-}
