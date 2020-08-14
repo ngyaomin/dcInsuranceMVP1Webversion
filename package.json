@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "client": "cd displayforinsuringclient && npm start",
-    "dev": "concurrently \"nodemon app.js\" \"npm run client\""
+    "dev": "concurrently -n 'server,client' \"nodemon app.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",
