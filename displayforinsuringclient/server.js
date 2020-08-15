@@ -11,7 +11,9 @@ mongoose.connect('mongodb://localhost/test_db', {
   useUnifiedTopology: true
 });
 
-
+mongoose.connection.on('connected', () => {
+  console.log('mongoose is connected');
+});
 
 app.use(morgan('tiny'));
 
