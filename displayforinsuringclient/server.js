@@ -6,6 +6,13 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 8080;
 
+mongoose.connect('mongodb://localhost/test_db', {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+});
+
+
+
 app.use(morgan('tiny'));
 
 app.get('/api', (req, res) => {
