@@ -2,11 +2,14 @@ const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const path = require('path');
+const MONGODB_URI = require('keeptourself/mongoaccess.js');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-mongoose.connect('mongodb://localhost/test_db', {
+const MONGODB_URI = MONGODB_URI;
+
+mongoose.connect(MONGODB_URI || 'mongodb://localhost/test_db', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
@@ -14,6 +17,7 @@ mongoose.connect('mongodb://localhost/test_db', {
 mongoose.connection.on('connected', () => {
   console.log('mongoose is connected');
 });
+
 
 app.use(morgan('tiny'));
 
