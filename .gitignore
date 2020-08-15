@@ -1,0 +1,5 @@
+//ntucincome
+
+const MONGODB_URI = 'mongodb+srv://ngyaomin:ntucincome@dcinsurancedb.3zkll.mongodb.net/<dbname>?retryWrites=true&w=majority';
+
+displayforinsuringclient/mongoacess.js
